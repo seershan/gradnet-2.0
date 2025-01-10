@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - GradNet</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="#3498db" />
+                    <text x="50" y="65" font-size="50" text-anchor="middle" fill="white">G</text>
+                </svg>
+                <span>GradNet</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="network.html">Network</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="stories.html">Success Stories</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="dashboard.html" class="active btn-dashboard">Dashboard</a></li>
+                <li><a href="profile.html" class="btn-profile">My Profile</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard-header">
+            <h1>Welcome, <span id="user-name">John Doe</span>!</h1>
+            <p>Here's what's happening in your GradNet community</p>
+        </section>
+
+        <section class="dashboard-content">
+            <div class="dashboard-card">
+                <h2>Your Network</h2>
+                <p>You have <strong>150</strong> connections</p>
+                <a href="network.html" class="dashboard-link">Expand Your Network</a>
+            </div>
+            <div class="dashboard-card">
+                <h2>Job Opportunities</h2>
+                <p><strong>25</strong> new job postings in your field</p>
+                <a href="jobs.html" class="dashboard-link">View Jobs</a>
+            </div>
+            <div class="dashboard-card">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Alumni Networking Mixer - June 15</li>
+                    <li>Career Workshop - June 22</li>
+                    <li>Industry Panel Discussion - July 5</li>
+                </ul>
+                <a href="#" class="dashboard-link">See All Events</a>
+            </div>
+            <div class="dashboard-card">
+                <h2>Your Contributions</h2>
+                <p>You've helped raise <strong>$500</strong> this year</p>
+                <a href="donate.html" class="dashboard-link">Make a Donation</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                
+                            <ul>Facebook</ul><br>
+                            <ul>Instaram</ul><br>
+                            <ul>Twitter</ul><br>
+                            <ul>Linkedin</ul><br>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GradNet. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
+

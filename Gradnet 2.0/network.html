@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network - GradNet</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/network.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="#3498db" />
+                    <text x="50" y="65" font-size="50" text-anchor="middle" fill="white">G</text>
+                </svg>
+                <span>GradNet</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="network.html" class="active">Network</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="stories.html">Success Stories</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html" class="btn-dashboard">Dashboard</a></li>
+                <li><a href="profile.html" class="btn-profile">My Profile</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="network-hero">
+            <h1>Connect with Alumni</h1>
+            <p>Expand your professional network and discover new opportunities</p>
+        </section>
+
+        <section class="search-filter">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search alumni by name or industry...">
+                <button id="search-button" class="cta-button">Search</button>
+            </div>
+            <div class="filter-container">
+                <select id="industry-filter">
+                    <option value="">All Industries</option>
+                    <option value="tech">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+                <select id="year-filter">
+                    <option value="">All Graduation Years</option>
+                    <option value="2020">2020-2023</option>
+                    <option value="2015">2015-2019</option>
+                    <option value="2010">2010-2014</option>
+                    <option value="2005">2005-2009</option>
+                    <option value="2000">2000-2004</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="alumni-grid">
+            <div class="alumni-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="John Doe">
+                <div class="alumni-info">
+                    <h3>John Doe</h3>
+                    <p class="job-title">Software Engineer</p>
+                    <p class="company">Tech Co.</p>
+                    <p class="graduation-year">Class of 2018</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+            </div>
+            <div class="alumni-card">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Jane Smith">
+                <div class="alumni-info">
+                    <h3>Jane Smith</h3>
+                    <p class="job-title">Financial Analyst</p>
+                    <p class="company">Finance Corp.</p>
+                    <p class="graduation-year">Class of 2016</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+            </div>
+            <div class="alumni-card">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Mike Johnson">
+                <div class="alumni-info">
+                    <h3>Mike Johnson</h3>
+                    <p class="job-title">Marketing Manager</p>
+                    <p class="company">Ad Agency</p>
+                    <p class="graduation-year">Class of 2019</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+            </div>
+            <div class="alumni-card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Sarah Brown">
+                <div class="alumni-info">
+                    <h3>Sarah Brown</h3>
+                    <p class="job-title">Data Scientist</p>
+                    <p class="company">AI Innovations</p>
+                    <p class="graduation-year">Class of 2020</p>
+                    <button class="connect-btn">Connect</button>
+                </div>
+            </div>
+            <!-- Add more alumni cards here -->
+        </section>
+
+        <div class="pagination">
+            <button>&laquo; Previous</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>Next &raquo;</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                
+                            <ul>Facebook</ul><br>
+                            <ul>Instaram</ul><br>
+                            <ul>Twitter</ul><br>
+                            <ul>Linkedin</ul><br>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GradNet. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/network.js"></script>
+</body>
+</html>
+

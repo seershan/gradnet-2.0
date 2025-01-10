@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - GradNet</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="#3498db" />
+                    <text x="50" y="65" font-size="50" text-anchor="middle" fill="white">G</text>
+                </svg>
+                <span>GradNet</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="network.html">Network</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="stories.html">Success Stories</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="signup.html" class="btn-signup">Sign Up</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="newsletter-hero">
+            <h1>Stay Connected with GradNet</h1>
+            <p>Subscribe to our newsletter for the latest updates, events, and opportunities</p>
+        </section>
+
+        <section class="newsletter-form">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletter-signup">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="graduation-year">Graduation Year</label>
+                    <input type="number" id="graduation-year" name="graduation-year" required>
+                </div>
+                <div class="form-group">
+                    <label for="interests">Areas of Interest</label>
+                    <select id="interests" name="interests" multiple>
+                        <option value="career">Career Opportunities</option>
+                        <option value="events">Alumni Events</option>
+                        <option value="networking">Networking</option>
+                        <option value="mentorship">Mentorship Programs</option>
+                        <option value="fundraising">Fundraising Initiatives</option>
+                    </select>
+                </div>
+                <button type="submit" class="cta-button">Subscribe</button>
+            </form>
+        </section>
+
+        <section class="newsletter-benefits">
+            <h2>Why Subscribe?</h2>
+            <ul>
+                <li>Stay updated on alumni events and reunions</li>
+                <li>Receive exclusive job opportunities from fellow alumni</li>
+                <li>Get inspired by success stories from your alma mater</li>
+                <li>Learn about ways to give back and support current students</li>
+                <li>Connect with old friends and make new professional connections</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                
+                            <ul>Facebook</ul><br>
+                            <ul>Instaram</ul><br>
+                            <ul>Twitter</ul><br>
+                            <ul>Linkedin</ul><br>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GradNet. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/newsletter.js"></script>
+</body>
+</html>
+

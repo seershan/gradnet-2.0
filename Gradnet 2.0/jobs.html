@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs - GradNet</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jobs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="#3498db" />
+                    <text x="50" y="65" font-size="50" text-anchor="middle" fill="white">G</text>
+                </svg>
+                <span>GradNet</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="network.html">Network</a></li>
+                <li><a href="jobs.html" class="active">Jobs</a></li>
+                <li><a href="stories.html">Success Stories</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="signup.html" class="btn-signup">Sign Up</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="jobs-hero">
+            <h1>Find Your Dream Job</h1>
+            <p>Explore career opportunities shared by our alumni community</p>
+        </section>
+
+        <section class="job-search">
+            <input type="text" placeholder="Search jobs...">
+            <select>
+                <option value="">All Categories</option>
+                <option value="tech">Technology</option>
+                <option value="finance">Finance</option>
+                <option value="marketing">Marketing</option>
+                <option value="healthcare">Healthcare</option>
+            </select>
+            <select>
+                <option value="">All Locations</option>
+                <option value="newyork">New York</option>
+                <option value="sanfrancisco">San Francisco</option>
+                <option value="london">London</option>
+                <option value="tokyo">Tokyo</option>
+            </select>
+            <button class="search-btn">Search</button>
+        </section>
+
+        <section class="job-listings">
+            <div class="job-card">
+                <h3>Software Engineer</h3>
+                <p class="company">Tech Co.</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                <p class="description">We are seeking a talented Software Engineer to join our dynamic team...</p>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-card">
+                <h3>Marketing Manager</h3>
+                <p class="company">Brand Inc.</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                <p class="description">Brand Inc. is looking for an experienced Marketing Manager to lead our marketing efforts...</p>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-card">
+                <h3>Data Scientist</h3>
+                <p class="company">AI Solutions</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> London, UK</p>
+                <p class="description">Join our cutting-edge AI team as a Data Scientist and work on exciting projects...</p>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-card">
+                <h3>Financial Analyst</h3>
+                <p class="company">Global Finance</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Tokyo, Japan</p>
+                <p class="description">We are seeking a detail-oriented Financial Analyst to join our international team...</p>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+        </section>
+
+        <div class="pagination">
+            <button>&laquo; Previous</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>Next &raquo;</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                
+                            <ul>Facebook</ul><br>
+                            <ul>Instaram</ul><br>
+                            <ul>Twitter</ul><br>
+                            <ul>Linkedin</ul><br>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GradNet. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jobs.js"></script>
+</body>
+</html>
+
